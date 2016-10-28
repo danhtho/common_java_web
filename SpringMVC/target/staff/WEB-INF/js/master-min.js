@@ -1,0 +1,1 @@
+function comma(num){var n=num.toString(),p=n.indexOf(".");return n.replace(/\d(?=(?:\d{3})+(?:\.|$))/g,function($0,i){return p<0||i<p?($0+","):$0;});}function zeroPad(num,places){var zero=places-num.toString().length+1;return Array(+(zero>0&&zero)).join("0")+num;}
